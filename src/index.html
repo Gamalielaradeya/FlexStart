@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/2db862d452.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 
-<body class="bg-white">
+<body class="bg-cover bg-no-repeat" style="background-image: url('../assets/img/hero-bg.png');">
 
-    <div class="w-9/12  mx-auto">
-        <nav class="flex flex-row items-center bg-white justify-between py-4">
+    <div class=" sticky top-0 z-10 bg-transparent" id="navbar">
+        <nav class="flex flex-row items-center justify-between py-4 w-9/12  mx-auto">
             <div class="flex items-center ">
                 <div class="flex flex-row items-center">
                     <img class="w-6 h-6" src="../assets/img/logo.png" alt="">
@@ -38,7 +39,9 @@
                 </button>
             </div>
         </nav>
+    </div>
 
+    <div class="w-9/12  mx-auto">
         <section class="flex flex-row w-full h-auto ">
             <div class="flex h-screen items-center justify-between w-full ">
                 <div class="w-6/12 justify-center flex flex-col space-y-5">
@@ -55,9 +58,12 @@
                 </div>
             </div>
         </section>
+    </div>
 
-        <div class="flex flex-row w-full  mt-10 justify-between">
-            <div class="w-6/12 justify-center flex flex-col p-4 bg-slate-100">
+    <div class="w-full bg-white p-6">
+    <div class="w-9/12  mx-auto">
+        <div class="flex flex-row w-full  my-5 justify-between ">
+            <div class="w-6/12 justify-center flex flex-col px-4 bg-slate-100 my-10">
                 <span class="uppercase text-blue-900 font-semibold">Who We Are</span>
                 <div class="flex flex-col space-y-5">
                     <span class="text-blue-950 font-semibold text-2xl">Expedita voluptas omnis cupiditate totam eveniet
@@ -73,37 +79,35 @@
             <div class="w-6/12 flex items-center">
                 <img class="w-auto h-auto" src="../assets/img/about.jpg" alt="">
             </div>
-
-            
         </div>
-
-        
-
-
-        
     </div>
+</div>      
 
+
+        
+    
+<div class="w-full bg-white p-6">
     <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
         <div class="flex flex-col items-center justify-center">
             <span class="text-sky-700 font-semibold uppercase text-[12px]">our values</span>
             <span class="text-slate-900 font-bold text-3xl">Odit est perspiciatis laborum et dicta</span>
         </div>
-        <div class="flex flex-row justify-between">
-            <div class="flex w-4/12  hover:shadow-md shadow-black p-6 group">
+        <div class="flex flex-row justify-between space-x-4">
+            <div class="flex w-4/12  hover:shadow-md shadow p-6 group">
                 <div class="flex flex-col items-center justify-center space-y-2">
                     <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90" src="../assets/img/values-1.png" alt="">
                     <span class="text-center font-bold text-blue-950 text-2xl">Ad cupiditate sed est odio</span>
                     <p class="text-center font-medium text-slate-500">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
                 </div>
             </div>
-            <div class="flex w-4/12  hover:shadow-md shadow-black p-6 group">
+            <div class="flex w-4/12  hover:shadow-md  shadow p-6 group">
                 <div class="flex flex-col items-center justify-center space-y-2">
                     <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90" src="../assets/img/values-2.png" alt="">
                     <span class="text-center font-bold text-blue-950 text-2xl">Voluptatem voluptatum alias</span>
                     <p class="text-center font-medium text-slate-500">Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
                 </div>
             </div>
-            <div class="flex w-4/12 hover:shadow-md shadow-black p-6 group">
+            <div class="flex w-4/12 hover:shadow-md shadow  p-6 group">
                 <div class="flex flex-col items-center justify-center space-y-2">
                     <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90" src="../assets/img/values-3.png" alt="">
                     <span class="text-center font-bold text-blue-950 text-2xl">Fugit cupiditate alias nobis.</span>
@@ -113,6 +117,101 @@
         </div>
 
     </div>
+</div>
+
+<div class="w-full bg-white py-10 p-6">
+    <div class="w-9/12 mx-auto flex flex-row justify-between space-x-4">
+        
+        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
+            <div class="">
+                <svg  class="w-auto h-16 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                  </svg>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-blue-950 text-3xl font-bold">232</span>
+                <span class="font-sans font-semibold">Happy Clients</span>
+            </div>
+        </div>
+
+        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
+            <div class="">
+                <svg class="w-auto h-16 text-orange-800"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                  </svg>
+                  
+            </div>
+            <div class="flex flex-col">
+                <span class="text-blue-950 text-3xl font-bold">521</span>
+                <span class="font-sans font-semibold">Projects</span>
+            </div>
+        </div>
+
+        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
+            <div class="">
+                <svg class="w-auto h-16 text-orange-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path d="M6.72266 5.47968C6.81011 4.6032 7.11663 3.7628 7.61402 3.03585C8.11141 2.30889 8.78368 1.71874 9.56895 1.31971C10.3542 0.920684 11.2272 0.725607 12.1077 0.752437C12.9881 0.779267 13.8476 1.02714 14.6071 1.47324C15.3666 1.91935 16.0017 2.54934 16.4539 3.30524C16.9061 4.06113 17.1609 4.91863 17.1948 5.79881C17.2287 6.67899 17.0407 7.55355 16.648 8.342C16.2627 9.11563 15.6925 9.78195 14.9883 10.2821" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M7.43945 3.35268C8.25207 4.19161 9.22512 4.85854 10.3007 5.31379C11.3763 5.76904 12.5325 6.00332 13.7005 6.00268C14.8492 6.00382 15.9865 5.77762 17.0469 5.33742" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M10.8232 9.75268C10.5266 9.75268 10.2366 9.84065 9.98989 10.0055C9.74321 10.1703 9.55096 10.4046 9.43742 10.6787C9.32389 10.9527 9.29419 11.2543 9.35206 11.5453C9.40994 11.8363 9.5528 12.1036 9.76258 12.3133C9.97236 12.5231 10.2396 12.666 10.5306 12.7239C10.8216 12.7817 11.1232 12.752 11.3973 12.6385C11.6714 12.525 11.9056 12.3327 12.0704 12.086C12.2353 11.8394 12.3232 11.5493 12.3232 11.2527C12.3232 10.8549 12.1652 10.4733 11.8839 10.192C11.6026 9.91071 11.2211 9.75268 10.8232 9.75268Z" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M4.82324 7.17467V8.25268C4.82324 9.04832 5.13931 9.81139 5.70192 10.374C6.26453 10.9366 7.02759 11.2527 7.82324 11.2527H9.24649" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M21.7005 23.2527C21.7006 21.4693 21.211 19.7202 20.2852 18.196C19.3632 16.6779 18.0438 15.4409 16.4697 14.6187" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M2.2002 23.2527C2.2 21.4695 2.68926 19.7206 3.61465 18.1963C4.53542 16.6797 5.85284 15.4435 7.42453 14.621" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                    </svg>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-blue-950 text-3xl font-bold">1463</span>
+                <span class="font-sans font-semibold">Hours of Support</span>
+            </div>
+        </div>
+
+        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2 items-center">
+            <div class="flex">
+                <i class="fa-solid fa-users text-5xl text-pink-600"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-blue-950 text-3xl font-bold">15</span>
+                <span class="font-sans font-semibold">Hard Workers</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .navbar-transition {
+      transition: background-color 0.8s;
+    }
+    .navbar-scroll {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script>
+    window.addEventListener("scroll", function() {
+      var navbar = document.getElementById("navbar");
+      if (window.scrollY > 0) {
+        navbar.classList.add("navbar-scroll", "navbar-transition");
+      } else {
+        navbar.classList.remove("navbar-scroll");
+      }
+    });
+  </script>
+
+
+
 
 
 </body>
