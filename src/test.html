@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isi Pulsa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .telkomsel-logo {
+        background-image: url('../assets/img/pngegg\ \(3\).png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        
+        
+    }
+    .indosat-logo {
+        background-image: url('../assets/img/pngegg\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+    }
+    .xl-logo {
+        background-image: url('../assets/img/pngegg\ \(2\).png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+        
+    }
+    </style>
+
+</head>
+<body>
+  <div class=" w-11/12 mx-auto">
+    <div class="flex flex-col pt-2 space-y-1">
+      <label for="phone-number" class="text-gray-700 font-bold">Masukan No Telp</label>
+      <div class="flex flex-row space-x-2">
+      <input type="text" id="phone-number" class="mt-1 px-2 border-b-2 border-gray-300 w-full  focus:outline-none focus:ring-0 " inputmode="numeric">
+      <div id="logo-container" class=" hidden h-12 border-b-2 border-gray-300"></div>
+    </div>
+    <span id="info" class="text-[8px] font-semibold">Pilihan Produk akan Muncul Setelah Memasukan No telp</span>
+    </div>
+
+    <div id="jual" class="grid grid-cols-2 gap-4 pt-10 hidden">
+      <div class="bg-white border-2  flex flex-col ">
+        <div  class="logojual hidden h-3 mb-1"></div>
+        <span class="font-semibold pb-3">5.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 6.500</span>
+      </div>
+
+      <div class="bg-white border-2  flex flex-col ">
+        <div class="logojual hidden h-3 mb-1"></div>
+        <span class="font-semibold pb-3">10.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 11.500</span>
+      </div>
+
+      <div class="bg-white border-2   flex flex-col ">
+        <div  class="logojual hidden h-3 mb-1"></div>
+        <span class="font-semibold pb-3">15.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 16.500</span>
+      </div>
+
+      <div class="bg-white border-2 flex flex-col ">
+        <div  class="logojual hidden h-3 mb-1 "></div>
+        <span class="font-semibold pb-3">25.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 26.500</span>
+      </div>
+
+      <div class="bg-white border-2 flex flex-col ">
+        <div  class="logojual hidden h-3 mb-1"></div>
+        <span class="font-semibold pb-3">50.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 50.500</span>
+      </div>
+
+      <div class="bg-white border-2 flex flex-col ">
+        <div  class="logojual hidden h-3 mb-1"></div>
+        <span class="font-semibold pb-3">100.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 100.000</span>
+      </div>
+
+      <div class="bg-white border-2 flex flex-col ">
+        <div  class="logojual hidden h-3 mb-1"></div>
+        <span class="font-semibold pb-3">150.000</span>
+        <span class="text-blue-600 text-[10px]">Harga</span>
+        <span class="font-semibold text-sm">Rp 149.000</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const phoneNumberInput = document.getElementById('phone-number');
+    const logoContainer = document.getElementById('logo-container');
+    const logojual = document.querySelectorAll('.logojual');
+    const jual = document.getElementById('jual');
+    const info = document.getElementById('info');
+
+    phoneNumberInput.addEventListener('input', () => {
+    const phoneNumber = phoneNumberInput.value;
+    
+    if (phoneNumber) {
+        info.classList.add('hidden');
+
+        if (phoneNumber.startsWith('081')) {
+            jual.classList.remove('hidden');
+            logoContainer.className = 'telkomsel-logo';
+            for (let i = 0; i < logojual.length; i++) {
+                logojual[i].className = 'telkomsel-logo mb-1 h-3';
+            }
+        } else if (phoneNumber.startsWith('085')) {
+            jual.classList.remove('hidden');
+            logoContainer.className = 'indosat-logo';
+            for (let i = 0; i < logojual.length; i++) {
+                logojual[i].className = 'indosat-logo mb-1 h-5';
+            }
+        } else if (phoneNumber.startsWith('0877')) {
+            jual.classList.remove('hidden');
+            logoContainer.className = 'xl-logo';
+            for (let i = 0; i < logojual.length; i++) {
+                logojual[i].className = 'xl-logo mb-1 h-3';
+            }
+        } else {
+            logoContainer.className = '';
+            for (let i = 0; i < logojual.length; i++) {
+                logojual[i].className = 'hidden';
+            }
+        }
+    } else {
+        info.classList.remove('hidden');
+        jual.classList.add('hidden');
+        logoContainer.className = '';
+        for (let i = 0; i < logojual.length; i++) {
+            logojual[i].className = 'hidden';
+        }
+    }
+});
+</script>
+</body>
+</html>
