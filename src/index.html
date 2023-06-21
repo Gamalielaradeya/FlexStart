@@ -16,17 +16,17 @@
 
 <body class="bg-cover bg-no-repeat" style="background-image: url('../assets/img/hero-bg.png');">
 
-    <div class=" sticky top-0 z-10 bg-transparent" id="navbar">
-        <nav class="flex flex-row items-center justify-between py-4 w-9/12  mx-auto">
+    <div class=" sticky top-0 z-10 bg-transparent " id="navbar">
+        <nav class="px-2 lg:px-0 flex flex-row items-center justify-between py-4 xl:w-9/12 md:w-11/12 mx-auto">
             <div class="flex items-center ">
                 <div class="flex flex-row items-center">
                     <img class="w-6 h-6" src="../assets/img/logo.png" alt="">
                     <span class="text-3xl font-semibold text-blue-950">FlexStart</span>
                 </div>
             </div>
-            <div class="flex items-center space-x-6">
+            <div class=" lg:flex items-center space-x-6 hidden ">
                 <div class="flex flex-row  ">
-                    <ul class="flex space-x-6 font-medium text-md text-blue-800 ">
+                    <ul class="flex space-x-6 font-medium  text-blue-800 ">
                         <li>Home</li>
                         <li>About</li>
                         <li>Services</li>
@@ -43,16 +43,16 @@
         </nav>
     </div>
 
-    <div class="w-9/12  mx-auto">
-        <section class="flex flex-row w-full h-auto ">
-            <div class="flex h-screen items-center justify-between w-full ">
-                <div class="w-6/12 justify-center flex flex-col space-y-5">
-                    <span class="font-semibold text-blue-950 text-5xl">We offer modern solutions for growing your
+    <div class="xl:w-9/12 md:w-11/12  mx-auto pt-10 xl:pt-0">
+        <section class="flex  w-full h-auto items-center justify-center ">
+            <div class="flex flex-col lg:flex-row h-auto  lg:h-screen items-center lg:justify-between w-full space-y-10 lg:space-y-0 ">
+                <div class="w-11/12 lg:w-6/12 items-center  lg:items-start flex flex-col space-y-5">
+                    <span class="font-semibold text-blue-950 md:text-5xl text-3xl text-center lg:text-left">We offer modern solutions for growing your
                         business</span>
-                    <span class="font-mediumk text-slate-800 text-2xl">We are team of talented designers making websites
+                    <span class="font-mediumk text-slate-800 text-2xl text-center lg:text-left">We are team of talented designers making websites
                         with TailwindCSS</span>
                     <button
-                        class="w-2/6 bg-blue-700 text-white rounded-md px-5 py-3 font-semibold drop-shadow-2xl shadow-blue-900">Get
+                        class="lg:w-2/6 w-3/6 bg-blue-700 text-white rounded-md px-5 py-3 font-semibold drop-shadow-2xl shadow-blue-900">Get
                         Started -></button>
                 </div>
                 <div class=" flex items-center">
@@ -63,24 +63,25 @@
     </div>
 
     <div class="w-full bg-white p-6">
-        <div class="w-9/12  mx-auto">
-            <div class="flex flex-row w-full  my-5 justify-between ">
-                <div class="w-6/12 justify-center flex flex-col px-4 bg-slate-100 my-10">
+        <div class="xl:w-9/12 md:w-11/12  mx-auto">
+            <div class="flex flex-col lg:flex-row w-full  my-5 justify-between ">
+                <div class="lg:w-6/12 justify-center flex flex-col px-4 bg-slate-100 my-10">
                     <span class="uppercase text-blue-900 font-semibold">Who We Are</span>
                     <div class="flex flex-col space-y-5">
-                        <span class="text-blue-950 font-semibold text-2xl">Expedita voluptas omnis cupiditate totam
+                        <span class="pr-5 lg:pr-0 text-blue-950 font-semibold text-2xl">Expedita voluptas omnis cupiditate totam
                             eveniet
                             nobis sint iste. Dolores est repellat corrupti reprehenderit.</span>
                         <span class="text-slate-600 w-5/6">Quisquam vel ut sint cum eos hic dolores aperiam. Sed
                             deserunt
                             et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur
                             suscipit voluptatum nam et est corrupti.</span>
-                        <button
-                            class="w-2/6 bg-blue-700 text-white rounded-md px-5 py-3 font-semibold drop-shadow-2xl shadow-blue-900">Read
-                            More -></button>
+                        <div class="flex justify-center lg:justify-start">
+                            <button
+                            class="w-40 bg-blue-700 text-white rounded-md px-5 py-3 font-semibold drop-shadow-2xl shadow-blue-900">Read
+                            More -></button></div>
                     </div>
                 </div>
-                <div class="w-6/12 flex items-center">
+                <div class="lg:w-6/12 flex items-center">
                     <img class="w-auto h-auto" src="../assets/img/about.jpg" alt="">
                 </div>
             </div>
@@ -91,13 +92,13 @@
 
 
     <div class="w-full bg-white p-6">
-        <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
+        <div class="flex flex-col w-11/12 lg:w-9/12 mx-auto  mt-10 space-y-5">
             <div class="flex flex-col items-center justify-center">
-                <span class="text-sky-700 font-semibold uppercase text-[12px]">our values</span>
-                <span class="text-slate-900 font-bold text-3xl">Odit est perspiciatis laborum et dicta</span>
+                <span class="text-sky-700 font-semibold uppercase text-[12px] text-center">our values</span>
+                <span class="text-slate-900 font-bold text-3xl text-center">Odit est perspiciatis laborum et dicta</span>
             </div>
-            <div class="flex flex-row justify-between space-x-4">
-                <div class="flex w-4/12  hover:shadow-md shadow p-6 group">
+            <div class="flex flex-col lg:flex-row justify-between space-x-4">
+                <div class="flex w-full lg:w-4/12  hover:shadow-md shadow p-6 group">
                     <div class="flex flex-col items-center justify-center space-y-2">
                         <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90"
                             src="../assets/img/values-1.png" alt="">
@@ -106,7 +107,7 @@
                             voluptatem consequuntur sit. Et veritatis id.</p>
                     </div>
                 </div>
-                <div class="flex w-4/12  hover:shadow-md  shadow p-6 group">
+                <div class="flex w-full lg:w-4/12  hover:shadow-md  shadow p-6 group">
                     <div class="flex flex-col items-center justify-center space-y-2">
                         <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90"
                             src="../assets/img/values-2.png" alt="">
@@ -115,7 +116,7 @@
                             suscipit id. Doloremque ducimus ea sit non.</p>
                     </div>
                 </div>
-                <div class="flex w-4/12 hover:shadow-md shadow  p-6 group">
+                <div class="flex w-full lg:w-4/12  hover:shadow-md shadow  p-6 group">
                     <div class="flex flex-col items-center justify-center space-y-2">
                         <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90"
                             src="../assets/img/values-3.png" alt="">
@@ -130,7 +131,7 @@
     </div>
 
     <div class="w-full bg-white py-10 p-6">
-        <div class="w-9/12 mx-auto flex flex-row justify-between space-x-4">
+        <div class="xl:w-9/12 md:w-11/12 mx-auto flex flex-row justify-between space-x-4">
 
             <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
                 <div class="">
@@ -209,7 +210,7 @@
     </div>
 
     <div class="w-full bg-white p-6">
-        <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
+        <div class="flex flex-col xl:w-9/12 md:w-11/12 mx-auto  mt-10 space-y-5">
             <div class="flex flex-col items-center justify-center">
                 <span class="text-sky-700 font-semibold uppercase text-[12px]">features</span>
                 <span class="text-slate-900 font-bold text-3xl">Laboriosam et omnis fuga quis dolor direda fara</span>
@@ -269,7 +270,7 @@
     </div>
 
     <div class="bg-white w-full pt-16">
-        <div class="w-9/12 mx-auto flex flex-row">
+        <div class="xl:w-9/12 md:w-11/12 mx-auto flex flex-row">
             <div class="flex flex-col w-6/12 space-y-5">
                 <span class="font-bold text-blue-950 text-4xl">Neque officiis dolore maiores et exercitationem quae est
                     seda lidera pat claero</span>
@@ -307,7 +308,7 @@
     </div>
 
     <div class="bg-white w-full py-16">
-        <div class="w-9/12 mx-auto flex flex-col ">
+        <div class="xl:w-9/12 md:w-11/12 mx-auto flex flex-col ">
             <div class="font-bold text-blue-900 text-3xl text-center">
                 <span>Ratione mollitia eos ab laudantium rerum beatae quo</span>
             </div>
@@ -390,7 +391,7 @@
     </div>
 
     <div class="bg-white w-full py-10">
-        <div class="w-9/12 mx-auto ">
+        <div class="xl:w-9/12 md:w-11/12 mx-auto ">
             <div class="flex flex-col items-center justify-center ">
                 <div class="text-slate-800 font-semibold uppercase">
                     <span>Services</span>
