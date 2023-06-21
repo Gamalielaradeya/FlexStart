@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     
+
 </head>
 
 <body class="bg-cover bg-no-repeat" style="background-image: url('../assets/img/hero-bg.png');">
@@ -61,287 +63,480 @@
     </div>
 
     <div class="w-full bg-white p-6">
-    <div class="w-9/12  mx-auto">
-        <div class="flex flex-row w-full  my-5 justify-between ">
-            <div class="w-6/12 justify-center flex flex-col px-4 bg-slate-100 my-10">
-                <span class="uppercase text-blue-900 font-semibold">Who We Are</span>
-                <div class="flex flex-col space-y-5">
-                    <span class="text-blue-950 font-semibold text-2xl">Expedita voluptas omnis cupiditate totam eveniet
-                        nobis sint iste. Dolores est repellat corrupti reprehenderit.</span>
-                    <span class="text-slate-600 w-5/6">Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt
-                        et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur
-                        suscipit voluptatum nam et est corrupti.</span>
-                    <button
-                        class="w-2/6 bg-blue-700 text-white rounded-md px-5 py-3 font-semibold drop-shadow-2xl shadow-blue-900">Read
-                        More -></button>
+        <div class="w-9/12  mx-auto">
+            <div class="flex flex-row w-full  my-5 justify-between ">
+                <div class="w-6/12 justify-center flex flex-col px-4 bg-slate-100 my-10">
+                    <span class="uppercase text-blue-900 font-semibold">Who We Are</span>
+                    <div class="flex flex-col space-y-5">
+                        <span class="text-blue-950 font-semibold text-2xl">Expedita voluptas omnis cupiditate totam
+                            eveniet
+                            nobis sint iste. Dolores est repellat corrupti reprehenderit.</span>
+                        <span class="text-slate-600 w-5/6">Quisquam vel ut sint cum eos hic dolores aperiam. Sed
+                            deserunt
+                            et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur
+                            suscipit voluptatum nam et est corrupti.</span>
+                        <button
+                            class="w-2/6 bg-blue-700 text-white rounded-md px-5 py-3 font-semibold drop-shadow-2xl shadow-blue-900">Read
+                            More -></button>
+                    </div>
                 </div>
-            </div>
-            <div class="w-6/12 flex items-center">
-                <img class="w-auto h-auto" src="../assets/img/about.jpg" alt="">
+                <div class="w-6/12 flex items-center">
+                    <img class="w-auto h-auto" src="../assets/img/about.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>      
 
 
-        
-    
-<div class="w-full bg-white p-6">
-    <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
-        <div class="flex flex-col items-center justify-center">
-            <span class="text-sky-700 font-semibold uppercase text-[12px]">our values</span>
-            <span class="text-slate-900 font-bold text-3xl">Odit est perspiciatis laborum et dicta</span>
+
+
+    <div class="w-full bg-white p-6">
+        <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
+            <div class="flex flex-col items-center justify-center">
+                <span class="text-sky-700 font-semibold uppercase text-[12px]">our values</span>
+                <span class="text-slate-900 font-bold text-3xl">Odit est perspiciatis laborum et dicta</span>
+            </div>
+            <div class="flex flex-row justify-between space-x-4">
+                <div class="flex w-4/12  hover:shadow-md shadow p-6 group">
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90"
+                            src="../assets/img/values-1.png" alt="">
+                        <span class="text-center font-bold text-blue-950 text-2xl">Ad cupiditate sed est odio</span>
+                        <p class="text-center font-medium text-slate-500">Eum ad dolor et. Autem aut fugiat debitis
+                            voluptatem consequuntur sit. Et veritatis id.</p>
+                    </div>
+                </div>
+                <div class="flex w-4/12  hover:shadow-md  shadow p-6 group">
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90"
+                            src="../assets/img/values-2.png" alt="">
+                        <span class="text-center font-bold text-blue-950 text-2xl">Voluptatem voluptatum alias</span>
+                        <p class="text-center font-medium text-slate-500">Repudiandae amet nihil natus in distinctio
+                            suscipit id. Doloremque ducimus ea sit non.</p>
+                    </div>
+                </div>
+                <div class="flex w-4/12 hover:shadow-md shadow  p-6 group">
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90"
+                            src="../assets/img/values-3.png" alt="">
+                        <span class="text-center font-bold text-blue-950 text-2xl">Fugit cupiditate alias nobis.</span>
+                        <p class="text-center font-medium text-slate-500">Quam rem vitae est autem molestias explicabo
+                            debitis sint. Vero aliquid quidem commodi.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="flex flex-row justify-between space-x-4">
-            <div class="flex w-4/12  hover:shadow-md shadow p-6 group">
-                <div class="flex flex-col items-center justify-center space-y-2">
-                    <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90" src="../assets/img/values-1.png" alt="">
-                    <span class="text-center font-bold text-blue-950 text-2xl">Ad cupiditate sed est odio</span>
-                    <p class="text-center font-medium text-slate-500">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-                </div>
-            </div>
-            <div class="flex w-4/12  hover:shadow-md  shadow p-6 group">
-                <div class="flex flex-col items-center justify-center space-y-2">
-                    <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90" src="../assets/img/values-2.png" alt="">
-                    <span class="text-center font-bold text-blue-950 text-2xl">Voluptatem voluptatum alias</span>
-                    <p class="text-center font-medium text-slate-500">Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-                </div>
-            </div>
-            <div class="flex w-4/12 hover:shadow-md shadow  p-6 group">
-                <div class="flex flex-col items-center justify-center space-y-2">
-                    <img class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-90" src="../assets/img/values-3.png" alt="">
-                    <span class="text-center font-bold text-blue-950 text-2xl">Fugit cupiditate alias nobis.</span>
-                    <p class="text-center font-medium text-slate-500">Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-                </div>
-            </div>
-        </div>
-
     </div>
-</div>
 
-<div class="w-full bg-white py-10 p-6">
-    <div class="w-9/12 mx-auto flex flex-row justify-between space-x-4">
-        
-        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
-            <div class="">
-                <svg  class="w-auto h-16 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                  </svg>
-            </div>
-            <div class="flex flex-col">
-                <span class="text-blue-950 text-3xl font-bold">232</span>
-                <span class="font-sans font-semibold">Happy Clients</span>
-            </div>
-        </div>
+    <div class="w-full bg-white py-10 p-6">
+        <div class="w-9/12 mx-auto flex flex-row justify-between space-x-4">
 
-        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
-            <div class="">
-                <svg class="w-auto h-16 text-orange-800"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
-                  </svg>
-                  
-            </div>
-            <div class="flex flex-col">
-                <span class="text-blue-950 text-3xl font-bold">521</span>
-                <span class="font-sans font-semibold">Projects</span>
-            </div>
-        </div>
-
-        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
-            <div class="">
-                <svg class="w-auto h-16 text-orange-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                    <g id="SVGRepo_iconCarrier"> <path d="M6.72266 5.47968C6.81011 4.6032 7.11663 3.7628 7.61402 3.03585C8.11141 2.30889 8.78368 1.71874 9.56895 1.31971C10.3542 0.920684 11.2272 0.725607 12.1077 0.752437C12.9881 0.779267 13.8476 1.02714 14.6071 1.47324C15.3666 1.91935 16.0017 2.54934 16.4539 3.30524C16.9061 4.06113 17.1609 4.91863 17.1948 5.79881C17.2287 6.67899 17.0407 7.55355 16.648 8.342C16.2627 9.11563 15.6925 9.78195 14.9883 10.2821" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M7.43945 3.35268C8.25207 4.19161 9.22512 4.85854 10.3007 5.31379C11.3763 5.76904 12.5325 6.00332 13.7005 6.00268C14.8492 6.00382 15.9865 5.77762 17.0469 5.33742" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M10.8232 9.75268C10.5266 9.75268 10.2366 9.84065 9.98989 10.0055C9.74321 10.1703 9.55096 10.4046 9.43742 10.6787C9.32389 10.9527 9.29419 11.2543 9.35206 11.5453C9.40994 11.8363 9.5528 12.1036 9.76258 12.3133C9.97236 12.5231 10.2396 12.666 10.5306 12.7239C10.8216 12.7817 11.1232 12.752 11.3973 12.6385C11.6714 12.525 11.9056 12.3327 12.0704 12.086C12.2353 11.8394 12.3232 11.5493 12.3232 11.2527C12.3232 10.8549 12.1652 10.4733 11.8839 10.192C11.6026 9.91071 11.2211 9.75268 10.8232 9.75268Z" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M4.82324 7.17467V8.25268C4.82324 9.04832 5.13931 9.81139 5.70192 10.374C6.26453 10.9366 7.02759 11.2527 7.82324 11.2527H9.24649" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M21.7005 23.2527C21.7006 21.4693 21.211 19.7202 20.2852 18.196C19.3632 16.6779 18.0438 15.4409 16.4697 14.6187" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M2.2002 23.2527C2.2 21.4695 2.68926 19.7206 3.61465 18.1963C4.53542 16.6797 5.85284 15.4435 7.42453 14.621" stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+            <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
+                <div class="">
+                    <svg class="w-auto h-16 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                     </svg>
-            </div>
-            <div class="flex flex-col">
-                <span class="text-blue-950 text-3xl font-bold">1463</span>
-                <span class="font-sans font-semibold">Hours of Support</span>
-            </div>
-        </div>
-
-        <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2 items-center">
-            <div class="flex">
-                <i class="fa-solid fa-users text-5xl text-pink-600"></i>
-            </div>
-            <div class="flex flex-col">
-                <span class="text-blue-950 text-3xl font-bold">15</span>
-                <span class="font-sans font-semibold">Hard Workers</span>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="w-full bg-white p-6">
-    <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
-        <div class="flex flex-col items-center justify-center">
-            <span class="text-sky-700 font-semibold uppercase text-[12px]">features</span>
-            <span class="text-slate-900 font-bold text-3xl">Laboriosam et omnis fuga quis dolor direda fara</span>
-        </div>
-        <div class="flex flex-row items-center justify-center">
-            <div class="w-6/12">
-                <img class="bg-cover" src="../assets/img/features.png" alt="">
-            </div>
-            <div class="w-6/12 grid grid-cols-2 gap-8">
-                <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
-                    <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
-                        <i class="group-hover:text-white fa-solid fa-check"></i>
-                    </div>
-                    <span class="font-semibold">Eos aspernatur rem</span>
                 </div>
-
-                <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
-                    <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
-                        <i class="group-hover:text-white fa-solid fa-check"></i>
-                    </div>
-                    <span class="font-semibold">Alias possimus</span>
-                </div>
-
-                <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
-                    <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
-                        <i class="group-hover:text-white fa-solid fa-check"></i>
-                    </div>
-                    <span class="font-semibold">Volup amet voluptas</span>
-                </div>
-
-                <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
-                    <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
-                        <i class="group-hover:text-white fa-solid fa-check"></i>
-                    </div>
-                    <span class="font-semibold">Facilis neque ipsam</span>
-                </div>
-
-                <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
-                    <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
-                        <i class="group-hover:text-white fa-solid fa-check"></i>
-                    </div>
-                    <span class="font-semibold">Rerum omnis sint</span>
-                </div>
-
-                <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
-                    <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
-                        <i class="group-hover:text-white fa-solid fa-check"></i>
-                    </div>
-                    <span class="font-semibold">Repellendus mollitia</span>
-                </div>
-
-            </div>
-            
-        </div>
-
-    </div>
-</div>
-
-<div class="bg-white w-full pt-16">
-    <div class="w-9/12 mx-auto flex flex-row">
-        <div class="flex flex-col w-6/12 space-y-5">
-            <span class="font-bold text-blue-950 text-4xl">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</span>
-            <div class="flex flex-col relative space-y-2">
-                <ul class="box-content static flex flex-row space-x-4 text-md font-semibold uppercase mb-3 ">
-                    <li class="text-blue-800 pb-5 z-10  border-slate-800 border-b-2 ">saepe fuga</li>
-                    <li class="text-blue-800 pb-5 z-10 hover:border-slate-800 hover:border-b-2">voluptates</li>
-                    <li class="text-blue-800 pb-5 z-10 hover:border-slate-800 hover:border-b-2 ">corrupti</li>
-                    <div class="w-full h-[2px] top-11 right-0 bg-slate-200 absolute"></div>
-                </ul>
-                <div class="flex flex-col space-y-3 font-semibold text-sm">
-                    <span>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem</span>
-                    <div class="flex flex-row items-center space-x-3">
-                        <i class="text-blue-500 fa-solid fa-check"></i>
-                        <span class="font-semibold text-blue-900">Repudiandae rerum velit modi et officia quasi facilis</span>
-                    </div>
-                    <span>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</span>
-                    <div class="flex flex-row items-center space-x-3">
-                        <i class="text-blue-500 fa-solid fa-check"></i>
-                        <span class="font-semibold text-blue-900">Incidunt non veritatis illum ea ut nisi</span>
-                    </div>
-                    <span>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</span>
+                <div class="flex flex-col">
+                    <span class="text-blue-950 text-3xl font-bold">232</span>
+                    <span class="font-sans font-semibold">Happy Clients</span>
                 </div>
             </div>
-        </div>
-        <div class="w-6/12 ">
-            <img class="w-auto h-auto" src="../assets/img/features-2.png" alt="">
+
+            <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
+                <div class="">
+                    <svg class="w-auto h-16 text-orange-800" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-blue-950 text-3xl font-bold">521</span>
+                    <span class="font-sans font-semibold">Projects</span>
+                </div>
+            </div>
+
+            <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2">
+                <div class="">
+                    <svg class="w-auto h-16 text-orange-800" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M6.72266 5.47968C6.81011 4.6032 7.11663 3.7628 7.61402 3.03585C8.11141 2.30889 8.78368 1.71874 9.56895 1.31971C10.3542 0.920684 11.2272 0.725607 12.1077 0.752437C12.9881 0.779267 13.8476 1.02714 14.6071 1.47324C15.3666 1.91935 16.0017 2.54934 16.4539 3.30524C16.9061 4.06113 17.1609 4.91863 17.1948 5.79881C17.2287 6.67899 17.0407 7.55355 16.648 8.342C16.2627 9.11563 15.6925 9.78195 14.9883 10.2821"
+                                stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7.43945 3.35268C8.25207 4.19161 9.22512 4.85854 10.3007 5.31379C11.3763 5.76904 12.5325 6.00332 13.7005 6.00268C14.8492 6.00382 15.9865 5.77762 17.0469 5.33742"
+                                stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.8232 9.75268C10.5266 9.75268 10.2366 9.84065 9.98989 10.0055C9.74321 10.1703 9.55096 10.4046 9.43742 10.6787C9.32389 10.9527 9.29419 11.2543 9.35206 11.5453C9.40994 11.8363 9.5528 12.1036 9.76258 12.3133C9.97236 12.5231 10.2396 12.666 10.5306 12.7239C10.8216 12.7817 11.1232 12.752 11.3973 12.6385C11.6714 12.525 11.9056 12.3327 12.0704 12.086C12.2353 11.8394 12.3232 11.5493 12.3232 11.2527C12.3232 10.8549 12.1652 10.4733 11.8839 10.192C11.6026 9.91071 11.2211 9.75268 10.8232 9.75268Z"
+                                stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M4.82324 7.17467V8.25268C4.82324 9.04832 5.13931 9.81139 5.70192 10.374C6.26453 10.9366 7.02759 11.2527 7.82324 11.2527H9.24649"
+                                stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M21.7005 23.2527C21.7006 21.4693 21.211 19.7202 20.2852 18.196C19.3632 16.6779 18.0438 15.4409 16.4697 14.6187"
+                                stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2.2002 23.2527C2.2 21.4695 2.68926 19.7206 3.61465 18.1963C4.53542 16.6797 5.85284 15.4435 7.42453 14.621"
+                                stroke="#42c10b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-blue-950 text-3xl font-bold">1463</span>
+                    <span class="font-sans font-semibold">Hours of Support</span>
+                </div>
+            </div>
+
+            <div class="shadow-zinc-300 shadow flex flex-row py-4 pl-10 w-3/12 space-x-2 items-center">
+                <div class="flex">
+                    <i class="fa-solid fa-users text-5xl text-pink-600"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-blue-950 text-3xl font-bold">15</span>
+                    <span class="font-sans font-semibold">Hard Workers</span>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
 
-<div class="bg-white w-full py-16">
-    <div class="w-9/12 mx-auto flex flex-col ">
-        <div class="font-bold text-blue-900 text-3xl text-center">
-            <span>Ratione mollitia eos ab laudantium rerum beatae quo</span>
-        </div>
-        <div class="flex flex-row justify-center pt-4">
-            <div class="w-4/12 ">
-                <img src="../assets/img/features-3.png" alt="">
+    <div class="w-full bg-white p-6">
+        <div class="flex flex-col w-9/12 mx-auto  mt-10 space-y-5">
+            <div class="flex flex-col items-center justify-center">
+                <span class="text-sky-700 font-semibold uppercase text-[12px]">features</span>
+                <span class="text-slate-900 font-bold text-3xl">Laboriosam et omnis fuga quis dolor direda fara</span>
             </div>
-            <div class="w-8/12 grid grid-cols-2 gap-x-7 py-16 px-3">
-                <div class="group flex flex-row space-x-3">
-                    <div class="text-5xl text-blue-900">
-                        <i class="fa-solid fa-chart-line"></i>
+            <div class="flex flex-row items-center justify-center">
+                <div class="w-6/12">
+                    <img class="bg-cover" src="../assets/img/features.png" alt="">
+                </div>
+                <div class="w-6/12 grid grid-cols-2 gap-8">
+                    <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
+                        <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
+                            <i class="group-hover:text-white fa-solid fa-check"></i>
+                        </div>
+                        <span class="font-semibold">Eos aspernatur rem</span>
                     </div>
-                    <div class="flex flex-col space-y-2">
-                        <span class="font-semibold text-blue-950 text-xl">Corporis voluptates sit</span>
-                        <span class="text-md">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</span>
+
+                    <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
+                        <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
+                            <i class="group-hover:text-white fa-solid fa-check"></i>
+                        </div>
+                        <span class="font-semibold">Alias possimus</span>
                     </div>
+
+                    <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
+                        <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
+                            <i class="group-hover:text-white fa-solid fa-check"></i>
+                        </div>
+                        <span class="font-semibold">Volup amet voluptas</span>
+                    </div>
+
+                    <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
+                        <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
+                            <i class="group-hover:text-white fa-solid fa-check"></i>
+                        </div>
+                        <span class="font-semibold">Facilis neque ipsam</span>
+                    </div>
+
+                    <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
+                        <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
+                            <i class="group-hover:text-white fa-solid fa-check"></i>
+                        </div>
+                        <span class="font-semibold">Rerum omnis sint</span>
+                    </div>
+
+                    <div class="group flex flex-row  items-center bg-white shadow space-x-2 py-4 pl-4 rounded">
+                        <div class="bg-slate-200 group-hover:bg-sky-800 flex justify-center items-center  rounded p-2">
+                            <i class="group-hover:text-white fa-solid fa-check"></i>
+                        </div>
+                        <span class="font-semibold">Repellendus mollitia</span>
+                    </div>
+
                 </div>
 
-                <div class="group flex flex-row space-x-3">
-                    <div class="text-5xl text-blue-900">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <span class="font-semibold text-blue-950 text-xl">Labore consequatur</span>
-                        <span class="text-md">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-white w-full pt-16">
+        <div class="w-9/12 mx-auto flex flex-row">
+            <div class="flex flex-col w-6/12 space-y-5">
+                <span class="font-bold text-blue-950 text-4xl">Neque officiis dolore maiores et exercitationem quae est
+                    seda lidera pat claero</span>
+                <div class="flex flex-col relative space-y-2">
+                    <ul class="box-content static flex flex-row space-x-4 text-md font-semibold uppercase mb-3 ">
+                        <li class="text-blue-800 pb-5 z-10  border-slate-800 border-b-2 ">saepe fuga</li>
+                        <li class="text-blue-800 pb-5 z-10 hover:border-slate-800 hover:border-b-2">voluptates</li>
+                        <li class="text-blue-800 pb-5 z-10 hover:border-slate-800 hover:border-b-2 ">corrupti</li>
+                        <div class="w-full h-[2px] top-11 right-0 bg-slate-200 absolute"></div>
+                    </ul>
+                    <div class="flex flex-col space-y-3 font-semibold text-sm">
+                        <span>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente
+                            atque consequatur minima nihil quae aspernatur quo suscipit voluptatem</span>
+                        <div class="flex flex-row items-center space-x-3">
+                            <i class="text-blue-500 fa-solid fa-check"></i>
+                            <span class="font-semibold text-blue-900">Repudiandae rerum velit modi et officia quasi
+                                facilis</span>
+                        </div>
+                        <span>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
+                            dolorum non eveniet magni quaerat nemo et.</span>
+                        <div class="flex flex-row items-center space-x-3">
+                            <i class="text-blue-500 fa-solid fa-check"></i>
+                            <span class="font-semibold text-blue-900">Incidunt non veritatis illum ea ut nisi</span>
+                        </div>
+                        <span>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur.
+                            Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo
+                            tempora. Quia et perferendis.</span>
                     </div>
                 </div>
-
-                <div class="group flex flex-row space-x-3">
-                    <div class="text-5xl text-blue-900">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <span class="font-semibold text-blue-950 text-xl">Molestiae dolor</span>
-                        <span class="text-md">Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</span>
-                    </div>
-                </div>
-
-                <div class="group flex flex-row space-x-3">
-                    <div class="text-5xl text-blue-900">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <span class="font-semibold text-blue-950 text-xl">Ullamco laboris nisi</span>
-                        <span class="text-md">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</span>
-                    </div>
-                </div>
-
-                <div class="group flex flex-row space-x-3">
-                    <div class="text-5xl text-blue-900">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <span class="font-semibold text-blue-950 text-xl">Beatae veritatis</span>
-                        <span class="text-md">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span>
-                    </div>
-                </div>
-
-                <div class="group flex flex-row space-x-3">
-                    <div class="text-5xl text-blue-900">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <span class="font-semibold text-blue-950 text-xl">Explicabo consectetur</span>
-                        <span class="text-md">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</span>
-                    </div>
-                </div>
-
-                
-
+            </div>
+            <div class="w-6/12 ">
+                <img class="w-auto h-auto" src="../assets/img/features-2.png" alt="">
             </div>
         </div>
     </div>
-</div>
+
+    <div class="bg-white w-full py-16">
+        <div class="w-9/12 mx-auto flex flex-col ">
+            <div class="font-bold text-blue-900 text-3xl text-center">
+                <span>Ratione mollitia eos ab laudantium rerum beatae quo</span>
+            </div>
+            <div class="flex flex-row justify-center pt-4">
+                <div class="w-4/12 ">
+                    <img src="../assets/img/features-3.png" alt="">
+                </div>
+                <div class="w-8/12 grid grid-cols-2 gap-x-7 py-16 px-3">
+                    <div class="group flex flex-row space-x-3">
+                        <div class="text-5xl text-blue-900">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <span class="font-semibold text-blue-950 text-xl">Corporis voluptates sit</span>
+                            <span class="text-md">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                                nisi ut aliquip</span>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-row space-x-3">
+                        <div class="text-5xl text-blue-900">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <span class="font-semibold text-blue-950 text-xl">Labore consequatur</span>
+                            <span class="text-md">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores
+                                omnis facere</span>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-row space-x-3">
+                        <div class="text-5xl text-blue-900">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <span class="font-semibold text-blue-950 text-xl">Molestiae dolor</span>
+                            <span class="text-md">Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor
+                                marte</span>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-row space-x-3">
+                        <div class="text-5xl text-blue-900">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <span class="font-semibold text-blue-950 text-xl">Ullamco laboris nisi</span>
+                            <span class="text-md">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                                nisi ut aliquip</span>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-row space-x-3">
+                        <div class="text-5xl text-blue-900">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <span class="font-semibold text-blue-950 text-xl">Beatae veritatis</span>
+                            <span class="text-md">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt</span>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-row space-x-3">
+                        <div class="text-5xl text-blue-900">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <span class="font-semibold text-blue-950 text-xl">Explicabo consectetur</span>
+                            <span class="text-md">Expedita veritatis consequuntur nihil tempore laudantium vitae denat
+                                pacta</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white w-full py-10">
+        <div class="w-9/12 mx-auto ">
+            <div class="flex flex-col items-center justify-center ">
+                <div class="text-slate-800 font-semibold uppercase">
+                    <span>Services</span>
+                </div>
+                <div class="font-semibold text-blue-950 text-4xl pb-5
+            ">
+                    <span>Veritatis et dolores facere numquam et praesentium</span>
+                </div>
+                <div class="grid grid-cols-3 gap-x-4 gap-y-5">
+                    <div
+                        class="group hover:bg-blue-900 transition duration-500 ease-in-out bg-white shadow border-b-4 border-blue-900 flex flex-col justify-center items-center space-y-3 py-12 rounded-md">
+                        <div
+                            class="bg-blue-200 text-blue-800 group-hover:bg-white transition duration-500 ease-in-out p-5 border-2 text-4xl rounded-md">
+                            <i class="fa-regular fa-comments"></i>
+                        </div>
+                        <div class="font-semibold text-2xl group-hover:text-white">
+                            <span>Nesciunt Mete</span>
+                        </div>
+                        <div class="font-semibold text-slate-500 px-8 text-center group-hover:text-white">
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
+                                iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div class="text-blue-600 font-semibold group-hover:text-white">
+                            <span>Read More -></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group hover:bg-orange-700 transition duration-500 ease-in-out bg-white shadow border-b-4 border-orange-700 flex flex-col justify-center items-center space-y-3 py-12 rounded-md">
+                        <div
+                            class="bg-orange-400 group-hover:bg-white text-orange-800 p-5 border-2 text-4xl rounded-md">
+                            <i class="fa-regular fa-comments "></i>
+                        </div>
+                        <div class="font-semibold text-2xl group-hover:text-white">
+                            <span>Nesciunt Mete</span>
+                        </div>
+                        <div class="font-semibold text-slate-500 px-8 text-center group-hover:text-white">
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
+                                iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div class="text-orange-600 font-semibold group-hover:text-white">
+                            <span>Read More -></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group hover:bg-green-700 transition duration-500 ease-in-out bg-white shadow border-b-4 border-green-700 flex flex-col justify-center items-center space-y-3 py-12 rounded-md">
+                        <div class="bg-green-300 text-green-600 group-hover:bg-white p-5 border-2 text-4xl rounded-md">
+                            <i class="fa-regular fa-comments"></i>
+                        </div>
+                        <div class="font-semibold text-2xl group-hover:text-white">
+                            <span>Nesciunt Mete</span>
+                        </div>
+                        <div class="font-semibold text-slate-500 px-8 text-center group-hover:text-white">
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
+                                iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div class="text-green-600 font-semibold group-hover:text-white">
+                            <span>Read More -></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group hover:bg-blue-900 transition duration-500 ease-in-out bg-white shadow border-b-4 border-blue-900 flex flex-col justify-center items-center space-y-3 py-12 rounded-md">
+                        <div
+                            class="bg-blue-200 text-blue-800 group-hover:bg-white transition duration-500 ease-in-out p-5 border-2 text-4xl rounded-md">
+                            <i class="fa-regular fa-comments"></i>
+                        </div>
+                        <div class="font-semibold text-2xl group-hover:text-white">
+                            <span>Nesciunt Mete</span>
+                        </div>
+                        <div class="font-semibold text-slate-500 px-8 text-center group-hover:text-white">
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
+                                iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div class="text-blue-600 font-semibold group-hover:text-white">
+                            <span>Read More -></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group hover:bg-orange-700 transition duration-500 ease-in-out bg-white shadow border-b-4 border-orange-700 flex flex-col justify-center items-center space-y-3 py-12 rounded-md">
+                        <div
+                            class="bg-orange-400 group-hover:bg-white text-orange-800 p-5 border-2 text-4xl rounded-md">
+                            <i class="fa-regular fa-comments "></i>
+                        </div>
+                        <div class="font-semibold text-2xl group-hover:text-white">
+                            <span>Nesciunt Mete</span>
+                        </div>
+                        <div class="font-semibold text-slate-500 px-8 text-center group-hover:text-white">
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
+                                iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div class="text-orange-600 font-semibold group-hover:text-white">
+                            <span>Read More -></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group hover:bg-green-700 transition duration-500 ease-in-out bg-white shadow border-b-4 border-green-700 flex flex-col justify-center items-center space-y-3 py-12 rounded-md">
+                        <div class="bg-green-300 text-green-600 group-hover:bg-white p-5 border-2 text-4xl rounded-md">
+                            <i class="fa-regular fa-comments"></i>
+                        </div>
+                        <div class="font-semibold text-2xl group-hover:text-white">
+                            <span>Nesciunt Mete</span>
+                        </div>
+                        <div class="font-semibold text-slate-500 px-8 text-center group-hover:text-white">
+                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
+                                iure perferendis tempore et consequatur.</p>
+                        </div>
+                        <div class="text-green-600 font-semibold group-hover:text-white">
+                            <span>Read More -></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="bg-white w-full py-10">
+        <div class="mx-auto border-4 flex flex-col justify-center items-center space-y-3">
+            <div class="text-blue-600 font-semibold uppercase">
+                <span>testimonials</span>
+            </div>
+            <div class="font-semibold text-4xl  text-blue-950">
+                <span>What they are saying about us</span>
+            </div>
+            <div class="flex ">
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="3">
+                    <swiper-slide>Slide 1</swiper-slide>
+                    <swiper-slide>Slide 2</swiper-slide>
+                    <swiper-slide>Slide 3</swiper-slide>
+                    <swiper-slide>Slide 4</swiper-slide>
+                    <swiper-slide>Slide 5</swiper-slide>
+                    <swiper-slide>Slide 6</swiper-slide>
+                    <swiper-slide>Slide 7</swiper-slide>
+                    <swiper-slide>Slide 8</swiper-slide>
+                    <swiper-slide>Slide 9</swiper-slide>
+                </swiper-container>
+            </div>
+
+        </div>
+    </div>-->
 
 
 
@@ -357,25 +552,27 @@
 
 
 
-<style>
-    .navbar-transition {
-      transition: background-color 0.8s;
-    }
-    .navbar-scroll {
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-  </style>
-  <script>
-    window.addEventListener("scroll", function() {
-      var navbar = document.getElementById("navbar");
-      if (window.scrollY > 0) {
-        navbar.classList.add("navbar-scroll", "navbar-transition");
-      } else {
-        navbar.classList.remove("navbar-scroll");
-      }
-    });
-  </script>
+    <style>
+        .navbar-transition {
+            transition: background-color 0.8s;
+        }
+
+        .navbar-scroll {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            var navbar = document.getElementById("navbar");
+            if (window.scrollY > 80) {
+                navbar.classList.add("navbar-scroll", "navbar-transition");
+            } else {
+                navbar.classList.remove("navbar-scroll");
+            }
+        });
+    </script>
 
 
 
