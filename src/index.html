@@ -14,9 +14,9 @@
 
 </head>
 
-<body class="bg-cover bg-no-repeat" style="background-image: url('../assets/img/hero-bg.png');">
-
-    <div class=" sticky top-0 z-20  bg-transparent " id="navbar">
+<body>
+    
+    <div class=" sticky top-0 z-20  bg-transparent "  id="navbar">
         <nav class="px-2 lg:px-0 flex flex-row items-center justify-between py-4 xl:w-9/12 md:w-11/12 mx-auto">
             <div class="flex items-center ">
                 <div class="flex flex-row items-center">
@@ -43,8 +43,9 @@
         </nav>
     </div>
 
-    <div class="xl:w-9/12 md:w-11/12  mx-auto pt-10 xl:pt-0">
-        <section class="flex  w-full h-auto items-center justify-center ">
+    <div class="hero w-full h-screen">
+    <div class="xl:w-9/12 md:w-11/12  mx-auto pt-10 xl:pt-0  ">
+        <section class=" flex w-full h-auto items-center justify-center">
             <div
                 class="flex flex-col lg:flex-row h-auto  lg:h-screen items-center lg:justify-between w-full space-y-10 lg:space-y-0 ">
                 <div class="w-11/12 lg:w-6/12 items-center  lg:items-start flex flex-col space-y-5">
@@ -64,12 +65,13 @@
             </div>
         </section>
     </div>
+</div>
 
     <div class="w-full bg-white p-6">
         <div class="xl:w-9/12 md:w-11/12  mx-auto">
             <div class="flex flex-col lg:flex-row w-full  my-5 justify-between ">
-                <div class="lg:w-6/12 justify-center flex flex-col px-4 py-4 lg:py-0 bg-slate-100 my-10">
-                    <span class="uppercase text-blue-900 font-semibold">Who We Are</span>
+                <div class="lg:w-6/12 justify-center flex flex-col px-4 py-4 bg-slate-100 my-10">
+                    <span class="uppercase text-blue-900 font-semibold ">Who We Are</span>
                     <div class="flex flex-col space-y-5">
                         <span class="pr-5 lg:pr-0 text-blue-950 font-semibold text-2xl">Expedita voluptas omnis
                             cupiditate totam
@@ -681,6 +683,8 @@
         </div>
     </div>
 
+    
+
 
 
 
@@ -715,18 +719,27 @@
             filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
         }
 
-        .swiper-slide-next {
+        @media (min-width: 920px) { 
+            .swiper-slide-next {
             filter: none !important;
             transform: scale(1.0) !important;
-            
-            filter: drop-shadow(0 10px 10px rgb(0 0 0 / 0.03)) drop-shadow(0 5px 5px rgb(0 0 0 / 0.08)) !important;
+            filter: drop-shadow(0 5px 5px rgb(0 0 0 / 0.03)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.08)) !important;
+            border-radius: 10px;
+            }
         }
+        
 
         .swiper {
             width: 100%;
             height: 100%;
         }
 
+        .hero {
+    
+    background: url(../assets/img/hero-bg.png) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
         .swiper-slide img {
